@@ -1,0 +1,979 @@
+*,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x:hidden;
+}
+:root {
+    --brinzal: #8a3c86;
+    --pinkest: #d43378;
+    --pgray:#969696;  /*paragraph's color*/
+    --cursivefont: 'Satisfy', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+/*only for >576px screens*/
+#bar{
+    display: none;
+    height: 25px;
+    border-top: 6px solid var(--brinzal);
+    border-bottom: 6px solid var(--brinzal);
+    padding: 0;
+    margin: auto 0;
+}
+#bar span{
+    display: inline-block;
+    width: 100%;
+    border-top: 6px solid var(--brinzal);
+    padding-bottom: 8px;
+}
+.forsmall{
+    display: none;
+}
+/*fiveicons of websites like facebook,twitter */
+.fiveicons a svg {
+    margin-right: 20px;
+    color: white;
+    background-color:#18323e;
+    padding: 5px;
+    border-radius: 18px;
+    font-size: 2em;
+}
+
+.fiveicons a:nth-of-type(1) svg {
+    padding: 0;
+    color: #18323e;
+    background-color: white;
+}
+
+/*.container-fluid*------------*/
+.container-fluid {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*circles --------------------------*/
+.halfcircle,
+.circle {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    height: 59vh;
+    width: 17vw;
+    border: 50px solid #fcf6f6;
+}
+
+.halfcircle {
+    border-right: 0;
+    border-bottom-left-radius: 17vw;
+    border-top-left-radius: 17vw;
+}
+
+.circle {
+    height: 50vh;
+    z-index: 0;
+    width: 25vw;
+    border-radius: 25vw;
+    border-width: 40px;
+}
+
+
+/*HEADER -------------------*/
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    min-height: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.brand,
+header>div:nth-of-type(3) {
+    text-align: center;
+}
+
+
+
+.brand p:nth-of-type(1) {
+    font-size: 1.5em;
+    line-height: 0.9;
+    font-weight: 700;
+}
+
+.brand p:nth-of-type(2) {
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.brand p {
+    color: var(--brinzal);
+}
+
+.brand span {
+    color: var(--pinkest);
+}
+
+header a {
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    color: #151515;
+}
+
+#Signup {
+    color: white;
+    font-weight: 700;
+    padding: 2% 5% 3% 5%;
+    border-radius: 15px;
+    background-color: var(--brinzal);
+}
+
+
+.front {
+    background: linear-gradient(180deg, rgba(193, 45, 99, 1) 0%, rgba(139, 51, 139, 1) 65%, rgba(111, 50, 111, 1) 92%);
+    min-height: 90vh;
+}
+.front>div:nth-of-type(1){
+    z-index: 0;
+}
+.front-head {
+    position: relative;
+    z-index: 1;
+    margin: 25% 0 0 15%;
+}
+
+.front-head h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    color: white;
+    font-size: 3.4em;
+}
+
+.front-head p {
+    color: white;
+}
+
+.front-btn a {
+    display: inline-block;
+    font-size: 0.9em;
+    text-align: center;
+    width: 40%;
+    border-radius: 25px;
+    color: white;
+    padding: 1em 0;
+}
+
+.front-btn a:first-child {
+    background-color: var(--pinkest);
+}
+
+.front-btn a:last-child {
+    background-color: var(--brinzal);
+}
+
+.front-i img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.front-i {
+    position: relative;
+    overflow: hidden;
+    border: 34px solid white;
+    border-radius: 50%;
+    top: -17%;
+    right: -11%;
+    width: 120%;
+    height: 120%;
+
+}
+/*circles */
+.circle.top{
+    top: -41%;
+    left: 29%;
+    width: 34vw;
+    z-index: -3;
+    height: 70vh;
+    border-color: #b9377c;
+}
+.circle.left{
+    bottom: 0;
+    left: -32%;
+    width: 38vw;
+    z-index: -3;
+    height: 79vh;
+    border-color: #a03a82;
+    border-radius: 38vw;
+}
+
+
+/* MAIN //-------------*/
+main {
+    padding-bottom: 54px;
+}
+
+
+main>div {
+    padding: 10px;
+    margin: 0 auto 30px auto;
+}
+
+main h2 {
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    font-family: var(--cursivefont);
+    font-weight: 400;
+    font-size: 2.5em;
+    padding: 10px;
+    color: var(--brinzal);
+}
+
+main h2 span {
+    color: var(--pinkest);
+}
+
+/* main First div /-------------*/
+main .first {
+    text-align: center;
+    background-color: #fcf6f6;
+    padding: 10px;
+    margin: 0px -15px;
+}
+
+main .first p {
+    color: var(--pgray);
+    width: 60%;
+    margin: 10px auto;
+    font-size: 0.9em;
+}
+
+/*circle near .first */
+.halfcircle {
+    height: 66vh;
+    width: 17vw;
+    top: 84vh;
+    z-index: 2;
+    right: 0;
+    border-color: #fcfcfc;
+}
+
+/*main Second div/---------------*/
+.second {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.container>div {
+    margin: 10px 5px;
+}
+
+.container h3 {
+    color: var(--pinkest);
+    font-family: var(--cursivefont);
+    font-weight: 400;
+    padding: 10px;
+}
+
+.container p {
+    color: var(--pgray);
+    font-size: 0.8em;
+}
+
+.container .icons {
+   color: rgb(193, 45, 99); 
+    font-size: 3em;
+    height: 70px;
+}
+
+
+/*main 3rd div/--------------------*/
+.third {
+    position: relative;
+}
+main .third h2 {
+    text-align: center;
+}
+
+main .third video {
+    display: block;
+    object-fit: cover;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+    height: 350px;
+}
+
+.circle.one {
+    left: -3%;
+    top: 26%;
+}
+
+.circle.two {
+    right: -5%;
+    top: 34%;
+    border-color: #fdfbfc;
+}
+
+
+/* main 4th div /-------------------*/
+.four>p {
+    text-align: center;
+    color: var(--pgray);
+    width: 70%;
+    font-size: 0.9em;
+    margin: 10px auto;
+}
+
+.four div {
+    display: grid;
+    justify-items: start;
+    width: 50%;
+    margin: 20px auto 10px auto;
+    grid-template: 1fr 2fr/1fr 1fr 1fr;
+
+}
+
+/* .four div span's*/
+.span1 {
+    color: black;
+    font-size: 0.8em;
+}
+
+.span2 {
+    color: var(--brinzal);
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+/*four circle near frequently asked questions*/
+.circle.three {
+    top: 45%;
+    left: -3%;
+}
+
+/* main 5th div/-----------------------*/
+.five {
+    position: relative;
+    display: grid;
+    width: 90%;
+    margin: 40px auto 0 auto;
+    grid-template: 50px minmax(250px, 450px) 50px/42% 16% 42%
+        /* 3rows and 3 columns*/
+}
+
+
+.question,
+.image {
+    border-radius: 20px;
+}
+
+.five .question {
+    /* always on upperlayer*/
+    grid-area: 2/1/span 2/span 2;
+    color: white;
+    background: linear-gradient(180deg, rgba(193, 45, 99, 1) 0%, rgba(170, 48, 116, 1) 48%, rgba(139, 51, 139, 1) 69%, rgba(111, 50, 111, 1) 92%);
+    overflow: auto;
+    padding: 2% 5% 2% 5%;
+}
+
+.five .image {
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    grid-area: 1/2/span 2/span 2;
+}
+
+.image img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+/*.questions */
+.question h2 {
+    text-align: left;
+    margin: 10px 0;
+    color: white;
+}
+
+.question p {
+    display: inline-block;
+    font-size: 0.70em;
+    margin:3px;
+    margin-left:5%;
+}
+
+.question h3 {
+    display: inline-block;
+    font-size: 0.85em;
+    margin-left: 1%;
+}
+
+.question .icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid white;
+    line-height: 5px;
+    border-radius: 10px;
+}
+
+/*main 6th div /--------------------------*/
+.six {
+    margin-top: 40px;
+    position: relative;
+}
+
+.six p,.six blockquote {
+    color: var(--pgray);
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.six>blockquote {
+    margin-top: 20px;
+    font-family: var(--cursivefont);
+}
+
+.contact p {
+    color: black;
+    font-size: 0.8em;
+}
+
+.contact p:first-child {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.contact p:last-child {
+    line-height: 0;
+}
+/* cirlce with H*/
+.circle.four{
+    top: 61%;
+    right: -4%;
+    height: 63vh;
+    width: 32vw;
+    border-radius: 32vw;
+}
+.circle.four p{
+    font-size: 24vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -21%;
+    left: 15%;
+    font-family: Arial;
+    font-weight: 700;
+    color: var(--brinzal);
+}
+
+
+
+/* .slider  slider/--------------------*/
+.slider {
+    position: relative;
+    width: 95%;
+    margin: 90px 0 30px auto;
+}
+
+.slider h2 {
+    font-family: var(--cursivefont);
+    font-weight: 400;
+    font-size: 2em;
+    display: inline-block;
+    padding: 5px 0 0 0;
+    color: var(--brinzal);
+}
+
+.slider span {
+    color: var(--pinkest);
+}
+
+.slider h2+button {
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-top: 8px;
+    padding: 1% 2%;
+    background-color: white;
+    color: var(--brinzal);
+    font-size: 1em;
+    border: 2px solid var(--brinzal);
+    border-radius: 7px;
+
+}
+
+/*Owl-carouse-------*/
+.owl-carousel {
+    margin-top: 20px;
+}
+
+.owl-carousel .item {
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 6px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+}
+
+/*ITEMS*/
+.nslider .item img {
+    width: 100%;
+    min-height: 100px;
+    max-height: 130px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.nslider .item h4 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.nslider .item p {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    color: #969696;
+}
+
+.nslider .item a {
+    color: var(--brinzal);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.owl-nav svg {
+    color: var(--brinzal);
+    
+}
+.owl-nav button{
+    background-color: #f3eaf2 !important;
+width: 30px !important;
+    height: 20px !important;
+}
+
+.owl-dots span{
+    width: 15px !important;
+    height: 15px !important;
+}
+.owl-dots span:hover{
+    background-color: var(--pinkest) !important;
+}
+.owl-theme .owl-nav,.owl-dots{
+    text-align:unset !important;
+}
+.owl-dots{
+    padding-left: 10px !important;
+}
+/*featured circle*/
+.slider .circle {
+    top: -29%;
+    left: -11%;
+    z-index: -2;
+    height: 57vh;
+    width: 28vw;
+    border-radius: 28vw;
+}
+
+
+
+/* contact-div/-----------------------------*/
+.contact-div {
+    display: grid;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    justify-items: center;
+    padding: 3% 5%;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fcf6f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-div input {
+    padding: 3% 3%;
+    width: 100%;
+    margin: 5px 0;
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contact-div h2 {
+    margin: 5px 0;
+    color: #282828;
+    font-weight: 700;
+}
+
+.contact-div p {
+    margin-bottom: 5px;
+}
+
+.contact-div button {
+    display: block;
+    margin: 10px 0;
+    padding: 4% 10%;
+    font-size: 0.9em;
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--pinkest);
+    color: white;
+}
+
+.contact-div .fiveicons {
+    margin-top: 15px;
+}
+
+.contact-div>div {
+    padding: 10px;
+}
+
+/*FOOTER /--------------------*/
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr) 2fr;
+    grid-gap: 0px 10px;
+    padding: 2% 3%;
+}
+
+footer h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: var(--brinzal);
+    font-weight: 700;
+}
+
+footer h2 span {
+    color: var(--pinkest);
+}
+
+footer h4 {
+    font-size: 0.55em;
+    line-height: 0;
+    font-weight: 300;
+}
+
+footer ol {
+    list-style-type: none;
+}
+
+footer h3 {
+    font-size: 0.75em;
+    margin: 5px 0;
+    color:#595959;
+    font-weight: 700;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer li {
+    margin: 3px 0;
+}
+
+footer a,
+footer p {
+    color: #a9a9a9;
+    font-size: 0.7em;
+}
+
+footer>div:first-child p {
+    width: 90%;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+footer>div:first-child p:last-child {
+    color: black;
+}
+
+footer .fiveicons svg {
+    font-size: 1.5em;
+    margin-right: 5px;
+    padding: 2px;
+    background-color: #8c979e;
+}
+footer .fiveicons a:nth-of-type(1) svg{
+    color: #8c979e;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    /*header--------------*/
+   
+    /*front cover -----------*/
+    .front {
+        min-height: 70vh;
+    }
+
+    .front h1 {
+        font-size: 2.5em;
+    }
+
+    .front-btn a {
+        padding: 0.8em 0;
+         width: 50%;
+        margin: 10px 0;
+    }
+    .front-head{
+        margin:10% 0 0 5%;
+    }
+    .front>div:nth-of-type(2){
+        overflow: hidden;
+    }
+    /*MAIN -----------------*/
+    main h2 {
+        font-size: 2em;
+    }
+
+    main h3 {
+        font-size: 1.4em;
+    }
+
+    /*.first to .six div*/
+    main .first p {
+        width: 90%;
+    }
+
+    main .second .container {
+        grid-template-columns: 1fr;
+    }
+
+    main .third video {
+        height: unset;
+    }
+
+    .four>p {
+        width: 90%;
+    }
+
+    .four div {
+        width: unset;
+        justify-items: center;
+    }
+
+    .four .span1 {
+        text-align: center;
+    }
+
+    .four .span2 {
+        font-size: 1.5em;
+    }
+
+    .five {
+        grid-template: unset;
+        margin: 0 auto;
+    }
+
+    .five .question {
+        grid-area: unset;
+        margin-bottom: 10px;
+    }
+
+    .five .image {
+        grid-area: unset;
+    }
+
+    .six p {
+        width: 90%;
+    }
+
+    /*slider---------------------*/
+    .slider {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .hslider h4 {
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    /*contact-div---------------------*/
+    .contact-div {
+        grid-template-columns: unset;
+        text-align: center;
+        width: unset;
+    }
+
+    .contact-div h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-div button {
+        margin: 10px auto;
+    }
+
+    /*footer-------------------*/
+    footer {
+        grid-template-columns: unset;
+        text-align: center;
+    }
+    .circle,.halfcircle {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .front h1 {
+        font-size: 2.2em;
+    }
+
+    .front-btn a {
+        font-size: 0.65em;
+        padding: 0.8em 0;
+        width: 49%;
+    }
+/*
+    .front-head {
+        padding:3em 0 0 1.5em;
+    }
+*/
+    main .first p {
+        width: 80%;
+    }
+
+    main h2 {
+        font-size: 2.1em;
+    }
+
+    /*contact-div ----------------*/
+    .contact-div {
+        width: unset;
+    }
+
+    .contact-div h2 {
+        font-size: 1.6em;
+    }
+
+    .fiveicons a svg {
+        margin-right: 10px;
+    }
+
+    .circle,.halfcircle {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .front h1 {
+        font-size: 2.7em;
+    }
+
+    .front-btn {
+        font-size: 0.7em;
+    }
+/*
+    .front-head {
+        padding: 5em 0 0 4em;
+    }
+*/
+    .circle.one {
+        border-width: 40px;
+    }
+}
+
+/*screen less than 300px*/
+@media (max-width:300px) {
+    .front h1 {
+        font-size: 2em;
+    }
+
+    .front-btn a {
+        width: 70%;
+    }
+
+    .six .contact p {
+        font-size: 0.7em;
+    }
+
+    .slider h2+button {
+        float: unset;
+    }
+
+    .slider .buttons {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) and (min-height:450px) {
+    .circle.one {
+        height: 50vh;
+    }
+    .circle.top{
+        height:50vh;
+    }
+    .circle.left{
+        height: 50vh;
+    }
+}
+@media screen and (max-width:767.98px){
+    #bar{
+        display: inline-block;
+    }
+    .brand {
+        text-align: left;
+    }
+    .brand p{
+        padding-left: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .forsmall{
+        position: absolute;
+        background: var(--brinzal);
+        width: 60%;
+        border-radius: 15px;
+        margin: 0 auto;
+        right: 20px;
+        top: 50px;
+        padding: 10px;
+    }
+    .forsmall a{
+        text-align: center;
+        display: block;
+        color: white;
+    }
+    #Signup{
+        background-color: var(--pinkest);
+    }
+}
+
+/* Using javascript--------*/
+.question p.hidden {
+    display: none;
+}
+.forsmall.show{
+    display:block;
+}
